@@ -14,35 +14,106 @@
 
 <body>
 	<div class="container">
-		<header>
-			<h1>Student Details Entry Form</h1>
-			<div id="note">Note: All fields marked with a red star are (*) are required</div>
-		</header>
-		<form action="entry">
+		<form action="entry" id="student">
+			<header>
+				<h2>Student Details Entry Form</h2>
+				<div id="note">Note: All fields marked with a red star are (<span class="asteric">*</span>) are required</div>
+			</header>
+
 			<!--		first row-->
 			<div class="row">
-				<div class="group-form">
+				<div class="group-form col-6">
 					<label for="sur_name">Sur name <sup class="asteric">*</sup></label>
 					<input type="text" name="sur_name" id="sur_name" placeholder="Enter your Sur Name here">
+					<div class="error" id="sn-error"></div>
 				</div>
-				<div class="group-form">
-					<label for="given_name">Given name <sup>*</sup></label>
+				<div class="group-form col-6">
+					<label for="given_name">Given name <sup class="asteric">*</sup></label>
 					<input type="text" name="given_name" id="given_name" placeholder="Enter your Given Name here">
+					<div class="error" id="gn-error"></div>
 				</div>
 			</div>
 			<!--end row-->
 			<!--			second row-->
-			<div class="row"></div>
+			<div class="row">
+				<div class="group-form col-12">
+					<label>Gender <sup>*</sup></label>
+					<div class="gender">
+						<input type="radio" id="male" name="gender" checked>
+						<label for="male">Male </label>
+
+						<input type="radio" name="gender" id="female">
+						<label for="female">Female</label>
+					</div>
+				</div>
+			</div>
+			<!--end row-->
 			<!--			third-->
-			<div class="row"></div>
+			<div class="row">
+				<div class="group-form col-6">
+					<label for="birth_date">Date of Birth <sup class="asteric">*</sup></label>
+					<input type="text" name="birth_date" id="birth_date" placeholder=01/01/1970> </div> <div class="group-form col-6">
+					<label for="country">Country <sup class="asteric">*</sup></label>
+					<div class="group-form">
+						<select name="country" id="country">
+							<option value="uganda">Uganda</option>
+							<option value="kenya">Kenya</option>
+							<option value="rwanda">Rwanda</option>
+							<option value="tanzania">Tanzania</option>
+							<option value="" selected>-select country-</option>
+						</select>
+					</div>
+				</div>
+			</div>
 			<!--		fourth row	-->
-			<div class="row"></div>
+			<div class="row">
+				<div class="group-form col-6">
+					<label for="residence">Place of Residence <sup class="asteric">*</sup></label>
+					<input type="text" name="residence" id="residence" placeholder="Enter your Current place of residence">
+				</div>
+				<div class="group-form col-6">
+					<label for="phone">Phone Number <sup class="asteric">*</sup></label>
+					<input type="tel" name="phone" id="phone" placeholder="Eg. 0704051191 or +256704051191">
+				</div>
+			</div>
+			<!--end row-->
 			<!--		fifth row	-->
-			<div class="row"></div>
+			<div class="row">
+				<div class="group-form col-6">
+					<label for="email">Email Address <sup class="asteric">*</sup></label>
+					<input type="email" name="email" placeholder="Eg. applicant@gmail.com" id="email">
+					<div id="e-error" class="error"></div>
+				</div>
+			</div>
 			<!--		sixth row	-->
-			<div class="row"></div>
+			<div class="row">
+				<div class="group-form col-6">
+					<label for="skills">Skills <span class="text-secondary">(Separate skills with commas)</span> <sup class="asteric">*</sup></label>
+					<textarea name="skills" id="" cols="30" rows="10">
+
+					</textarea>
+				</div>
+				<div class="group-form col-6">
+					<label for="projects">Projects <span class="text-muted">(Separate Projects with commas)</span> <sup class="asteric">*</sup></label>
+					<textarea name="projects" id="projects">
+
+					</textarea>
+				</div>
+
+			</div>
 			<!--		seventh row	-->
-			<div class="row"></div>
+			<div class="group-form">
+				<div class="row">
+					<div class="col-6"></div>
+					<div class="col-6">
+
+						<button type="submit" class="submit">Submit</button>
+						<button type="button" class="cancel">Cancel</button></div>
+
+				</div>
+
+
+			</div>
 
 		</form>
 
