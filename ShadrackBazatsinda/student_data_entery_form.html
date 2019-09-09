@@ -26,6 +26,12 @@
                             <td><input type="text" name="surname" id="surname" value="" placeholder="Enter your Sur Name here"></td>
                             <td><input type="text" name="givenName" id="givename" value="" placeholder="Enter your Gieven Name here"></td>
                         </tr>
+                        <tr>
+                            <td>
+                                <input style="border:none; color: red;" type="hidden" name="hidden" id="surna" value="Required">
+                            </td>
+                            <td><input style="border:none; color: red; padding-left: 20px;" type="hidden" name="hidden" id="give" value="Required"></td>
+                        </tr>
                     </table>
                 </div>
 <!-- div holding the gender radio buttons  -->
@@ -45,13 +51,7 @@
                             <td><label for="country" id="countrylab">Country<b style="color: red;">*</b></label></td>
                         </tr>
                         <tr>
-                            <td> <select name="dob" id="dob">
-                                <option value="">12/05/1993</option>
-                                <option value="">12/05/1993</option>
-                                <option value="">12/05/1993</option>
-                                <option value="">12/05/1993</option>
-                                <option value="">12/05/1993</option>
-                            </select></td>
+                            <td > <input type="date" name="date" id="date" value="date"></td>
                             <td><select name="country" id="country">
                                     <option value="" selected>Select Country</option>
                                     <option value="">Uganda</option>
@@ -88,6 +88,7 @@
                         <input type="text" name="email" id="email" value="" placeholder="Eg. applicant@gmail.com">
                     </div>
                 </div>
+                <button type="button" onclick="validation()">Submit</button>
                 
 
 
