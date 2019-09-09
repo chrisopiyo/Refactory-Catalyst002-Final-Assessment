@@ -1,0 +1,207 @@
+<!-- this is sabbiti isaac paschal's work -->
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+
+  <title>Student Details Entry Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="sampleform.css">
+
+
+</head>
+
+<!-- this is where the body starts -->
+
+<body style=" text-align: center;">
+
+
+  <!-- this is the heading for the form -->
+
+
+  <h1 style="text-align: center; color: aliceblue; background-color: blueviolet">Student Details Entry Form</h1>
+
+
+
+
+<div id="container" style="border: rgb(209, 7, 228) 2px solid; width: 100%; margin: auto; padding-bottom:10px " >
+
+
+
+  <form action="jotori" method="POST" style="width: 100%">
+
+    <table style="margin: auto">
+
+      <tr>
+
+
+        <td><strong>Sur name:</strong></td>
+        <td><strong>Given name:</strong></td>
+
+
+
+      </tr> 
+      
+      
+      <tr>
+
+
+          <td><input id="surname" type="text" name="surname" class="xd"></td> 
+          <td><input id="givenname" type="text" name="givenname" class="xd"></td>
+
+      </tr>
+      
+      <tr>
+        <td><span id="surfirst" style="color: red ;visibility: hidden;" >This field is required</span>
+        </td>
+        <td><span id="givenfirst" style="color: red ;visibility: hidden;" >This field is required</span>
+        </td>
+      </tr>
+
+
+      <tr>
+
+
+          <td><strong>Gender:</strong></td>
+        
+  
+      </tr> 
+        
+        
+        <tr>
+  
+    
+           <td> <input  id = "sexm" type="radio" name="sex" unchecked>male</td>
+            <td><input  id = "sexf" type="radio" name="sex" unchecked>Female</td>
+  
+        </tr>
+
+
+        <tr>
+
+
+            <td><strong>Date of Birth:</strong></td>
+            <td><strong>Country:</strong></td>
+    
+    
+    
+          </tr> 
+          
+          
+          <tr>
+    
+    
+              <td><input id="dob" type="text" name="dob" class="xd"></td> 
+              <td><input id="country" type="text" name="country" class="xd"></td>
+    
+          </tr>
+          
+
+          <tr>
+            <td><span id="dobfirst" style="color: red ;visibility: hidden;" >This field is required</span>
+            </td>
+            <td>
+              <span id="countryfirst" style="color: red ;visibility: hidden;" >This field is required</span>
+
+            </td>
+          </tr>
+
+
+
+
+
+
+
+          <tr>
+
+
+              <td><strong>Place of Residence:</strong></td>
+              <td><strong>Phone Number:</strong></td>
+      
+      
+      
+            </tr> 
+            
+            
+            <tr>
+      
+      
+                <td><input id="por" type="text" name="por" class="xd"></td> 
+                <td><input id="phone" type="text" name="phone" class="xd"></td>
+      
+            </tr>
+
+
+            <tr>
+              <td><span id="porfirst" style="color: red ;visibility: hidden;" >This field is required</span>
+              </td>
+              <td>
+                <span id="phonefirst" style="color: red ;visibility: hidden;" >This field is required</span>
+
+              </td>
+            </tr>
+
+
+            <tr>
+
+
+                <td><strong>Email Address:</strong></td>
+               
+      
+              </tr> 
+              
+              
+              <tr>
+        
+        
+                  <td><input id="email" type="text" name="firstname" class="xd"></td> 
+               
+        
+              </tr>
+
+              <tr>
+                <td><span id="emailfirst" style="color: red ;visibility: hidden;" >This field is required</span>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td><button type="submit" id="submit" style="background-color: blueviolet; color: rgb(248, 247, 246)" ><strong>SUBMIT</strong></button></td>
+                <td><button type="submit" id="submit"><strong>CANCEL</strong></button></td>
+              </tr>
+
+
+              
+              
+  
+
+        
+
+
+      
+
+    </table>
+    
+    
+  </form>
+
+
+</div>
+
+         <script src="sess.js"></script>
+
+
+</body>
+
+
+
+</html>
