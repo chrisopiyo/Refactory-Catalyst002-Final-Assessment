@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-
+<form onsubmit="studentValidate();" action="">
     <div id ="container">
         <div id="header">
             <h2>Student Details Entry Form</h2>
@@ -17,11 +17,14 @@
             <p> <b> Not all fields marked with a red star are(<sup>*</sup>)are required</b></p>
             <div id="surname">
                 <label for="surname">Surname <sup>*</sup></label> <br>
-                <input type="text" placeholder="Enter Your Sur Name Here" style="width:90%;border:1px solid #542a52;height:45px;"><span id="surnm"></span>
+                <input type="text" id="surnam" placeholder="Enter Your Sur Name Here" style="width:90%;border:1px solid #542a52;height:45px;">
+                <br><small id="surnm"></small>
             </div>
             <div id="givename">
                 <label for="givenname">Given name <sup>*</sup></label> <br>
-                <input type="text" placeholder="Enter Your Given Name Here" style="width:100%;border:1px solid #542a52;height:45px;"><span id="givenm"></span>
+                <input type="text" id="gname" placeholder="Enter Your Given Name Here" style="width:100%;border:1px solid #542a52;height:45px;">
+                
+                <small id="givenm"></small>
             </div>
             <div id="gender">
                     Gender:
@@ -53,16 +56,16 @@
                    <div id ="residence">
         <label for="Place ">Place Of Residence <sup>*</sup></label>  <br>
 
-                        <input type="text" style="width:90%;border:1px solid #542a52;height:45px;"> 
+                        <input type="text"placeholder="Enter YourCurrent Place Of Residence" style="width:90%;border:1px solid #542a52;height:45px;"> 
             </div>
              <br>
             <div id="PhoneNumber">
                 <label for="Phone">Phone Number <sup>*</sup></label> <br>
-                    <input type="text" style="width:100%;border:1px solid #542a52;height:45px;">
+                    <input type="text" placeholder="Eg.077222234 or +256778986754" style="width:100%;border:1px solid #542a52;height:45px;">
                 </div><br><br><br>
                 <div id="email">
                     <label for="email">Email Address <sup>*</sup></label>
-                        <input type="text"style="width:100%;border:1px solid #542a52;height:45px;">
+                        <input type="text" placeholder="E.g applicant@gmail.com" style="width:100%;border:1px solid #542a52;height:45px;">
                    </div>
 
                    <br>
@@ -87,6 +90,7 @@
         </div>
        
     </div>
-    
+</form>
+    <script src="index.js"></script>
 </body>
 </html>
