@@ -8,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-rgb (84,42,82)
+
 
 <body>
-    <h1>Student Data Entry Form</h1>
-    <p>Not all fields marked with a red star (*)star are Required</p>
-    <form action="">
+        <form action="">
+    <h2>Student Details Entry Form</h2>
+    <p>Not all fields marked with a red star (<span style="color: red">*</span>) star are Required</p>
+  
         <table>
             <tr>
                 <td>Sur name</td>
@@ -22,20 +25,19 @@ rgb (84,42,82)
             </tr>
 
             <tr>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
+                <td><input type="text" placeholder="Enter your Sur Name here" name = "surname" class = "surname" id = "surname"></td>
+                <td><input type="text" placeholder="Enter your Given Name here" name = "givenname" id = "givenname", class = "givenname"></td>
             </tr>
 
             <tr>
                 <td>gender</td>
             </tr>
-            <tr>
-                <td><input type="text"></td>
-            </tr>
+            <!-- <tr>
+                <td><input type="text" class = "gender" id = "gender"></td>
+            </tr> -->
 
             <tr>
-                <td><input type="radio" checked> Male</td>
-                <td><input type="radio">Female</td>
+                <td> <div class="gender"><p><input type="radio" checked> Male</p> <p><input type="radio">Female</p> </div></td>
             </tr>
 
             <tr>
@@ -43,7 +45,7 @@ rgb (84,42,82)
                 <td>Country</td>
             </tr>
             <tr>
-                <td><input type="date"></td>
+                <td><input type="text" placeholder="01/01/1970"></td>
                 <td><input type="text"></td>
 
             </tr>
@@ -54,8 +56,8 @@ rgb (84,42,82)
             </tr>
 
             <tr>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
+                <td><input type="text" placeholder="Enter your current place of Residence"></td>
+                <td><input type="text" placeholder="Eg. 07xxxxxxxx or +2567xxxxxxxxx"></td>
 
 
             </tr>
@@ -63,24 +65,30 @@ rgb (84,42,82)
                 <td>Email Address</td>
             </tr>
             <tr>
-                <td> <input type="text"></td>
+                <td> <input type="text" placeholder="Eg. applicant@gmail.com"></td>
             </tr>
             <tr>
 
 
-            <tr><input type="text"></tr>
+            <tr><td><input type="text"></td> </tr>
             <tr>
-                <td>Skills</td>
-                <td>Projects</td>
+                <td>Skills (Separate skills with commas)</td>
+                <td>Projects(Separate projects with commas)</td>
             </tr>
             <tr>
                 <td><input type="text"></td>
                 <td><input type="text"></td>
             </tr>
         </table>
-        <button>Submit</button>
-        <button>Cancel</button>
+        <button type="reset" class = "cancel"><b> Cancel</b></button>
+        <button type="submit"><b> Submit</b></button>
+        
     </form>
+
 </body>
+<div contenteditable>
+        ST<span style="color: red">A</span>CK OVERFLOW
+    </div>
+<script src="myscript.js"></script>
 
 </html>
