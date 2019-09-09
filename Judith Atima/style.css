@@ -1,0 +1,72 @@
+.container{
+    background-color: grey;
+    width: 40%;
+    height: 80%;
+}
+.content{
+    width: 90%;
+    margin-left: 80%;
+    background-color: white;
+}
+.header{
+    background-color: rgb(84,42,82);
+    height: 25px;
+    font-family: Arial;
+    color:white;
+    margin-top: 15px;
+}
+
+.info{
+    font-family: Arial;
+    /* font-size: 10cm; */
+
+}
+.name{
+    margin-left: 85px;
+    font-family: Arial;
+}
+.gender{
+    margin-left: 85px;
+    font-family: Arial;
+}
+.age{
+    margin-left: 85px;
+    font-family: Arial;
+}
+.country{
+    margin-left: 85px;
+    font-family: Arial;
+}
+.place{
+    
+    font-family: Arial;
+}
+.contact{
+    font-family: Arial;
+}
+.skill{
+    font-family: Arial; 
+}
+.project{
+    font-family: Arial; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
