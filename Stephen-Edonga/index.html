@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> stephen-edonga</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+    <div id ="container">
+        <div id="header">
+            <h2>Student Details Entry Form</h2>
+        </div>
+        <div id="studenNames">
+            <p> <b> Not all fields marked with a red star are(<sup>*</sup>)are required</b></p>
+            <div id="surname">
+                <label for="surname">Surname <sup>*</sup></label> <br>
+                <input type="text" placeholder="Enter Your Sur Name Here" style="width:90%;border:1px solid #542a52;height:45px;"><span id="surnm"></span>
+            </div>
+            <div id="givename">
+                <label for="givenname">Given name <sup>*</sup></label> <br>
+                <input type="text" placeholder="Enter Your Given Name Here" style="width:100%;border:1px solid #542a52;height:45px;"><span id="givenm"></span>
+            </div>
+            <div id="gender">
+                    Gender:
+                 <div id="genders">
+                    
+                    <table>
+                        <tr>
+                            <td><input style ="width:60%" type="radio" for="Gender" name="Gender" ></td>
+                            <td>&nbsp;</td>
+                            <td><input type="radio" for="Gender" name="Gender"></td>
+                        </tr>
+                    </table>
+                </div>
+                 
+            </div> <br>
+            <div id="dateOfBirth">
+                <label for="dateOfBirth">Date Of Birth <sup>*</sup></label><br>
+              <input type="text" style="width:90%;border:1px solid #542a52;height:45px;"><span id="date"></span>
+
+             </div>
+             <label for="Country">Country <sup>*</sup></label>
+             <div id="Country">
+                    <input type="text" style="width:100%;border:1px solid #542a52;height:45px;">
+      
+                   </div> 
+                  
+
+        </div>
+                   <div id ="residence">
+        <label for="Place ">Place Of Residence <sup>*</sup></label>  <br>
+
+                        <input type="text" style="width:90%;border:1px solid #542a52;height:45px;"> 
+            </div>
+             <br>
+            <div id="PhoneNumber">
+                <label for="Phone">Phone Number <sup>*</sup></label> <br>
+                    <input type="text" style="width:100%;border:1px solid #542a52;height:45px;">
+                </div><br><br><br>
+                <div id="email">
+                    <label for="email">Email Address <sup>*</sup></label>
+                        <input type="text"style="width:100%;border:1px solid #542a52;height:45px;">
+                   </div>
+
+                   <br>
+                   <div id="skills">
+                    <label for="skills">Skills (seprate skills with commas)</label><br>
+                    <input type="text" style="width:90%;border:1px solid #542a52;height:150px;">
+                   </div>
+                   <div id="projects">
+                       <label for="projects">Projects (Seperate Projects with commas)</label> <br>
+                       <input type="text" style="width:100%;border:1px solid #542a52;height:150px;">
+
+                   </div>
+                   <br>
+                   <div id="buttons">
+                        <div id="submit">
+                            <input type="submit" name="submit" value="Submit" style=" color:#fff;background-color: #542a52;width:100px;height: 35px;" >
+                        </div>
+                        <div id="cancel">
+                           <button style=" border:1px solid #542a52;color: #542a52;width:100px; height:35px;" >Cancel</button>
+                        </div>
+                   </div>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
