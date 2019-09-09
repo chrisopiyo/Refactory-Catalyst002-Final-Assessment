@@ -1,9 +1,36 @@
 body {
+  background-color: burlywood;
+}
+
+.container {
+  margin: 0 auto;
+  width: 650px;
+  height: 600px;
+  background-color: #fff;
 }
 
 .first {
-  background-color: purple;
+  background-color: #542a52;
   color: #fff;
   font-family: Helvetica, sans-serif;
+  margin: auto 0;
   /* height: 50px;  */
+}
+
+.inputs {
+  /* list-style: none; */
+  /* float: left; */
+  clear: left;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 17px;
+}
+
+label {
+  float: left;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 17px;
+}
+
+.all {
+  margin-bottom: 70px;
 }
