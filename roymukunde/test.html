@@ -17,66 +17,66 @@
       <p>note all fields marked with a red star(*) are required.</p>
       <form action="#">
          <div class="tester">
-<label for="">
-   Surname:
-   <input type="text" id="surname" placeholder="Enter your sur Name Here.">
-</label>
+            <table id="item">
+               <tr id="name">
+                  <td>Surname:</td>
+                  <td><input type="text" id="surname" placeholder="Enter your sur Name Here."
+                        style="width: 300px; height:25px;"></td>
+                  <td>Given name:</td>
+                  <td><input type="text" id="givenname" placeholder="Enter Your Given Name Here."
+                        style="width: 300px; height:25px;"></td>
+               </tr>
 
-<label for="">
-Given name:
-<input type="text" id="givenname" placeholder="Enter Your Given Name Here.">
-</label><br>
+               <tr>
+                  <td> Gender:</td>
+                  <td><input type="text"></td>
+               </tr>
 
-<label for="">
-   Gender:
-   <input type="text" >
-
-</label><br>
-
-<label for="">
-   Date Of Birth:
-   <input type="number" id="dob" placeholder="01/01/1970">
-</label>
-<label for="">
-   Country:
-   <input type="text" id="country" placeholder="------Select Country-------">
-   <select>
-kenya
-tz
-rwanda
-   </select>
-</label><br>
-
-<label for="">
-   Place Of Residence:
-   <input type="text" id="place" placeholder="Enter your Current Place of Residence." style="width: 250px;">
-</label>
-
-<label for="">
-   Phone Number:
-   <input type="text" id="phone" placeholder="Eg.07xxxxxxxx Or +2567xxxxxx" style="width: 250px;">
-</label><br>
-   
-<label for="">
-   Email Adress:
-   <input type="text" id="email" placeholder="Eg. applicant@gmail.com" style="width: 300px;">
-</label><br>
+               <tr>
+                  <td>Date Of Birth:</td>
+                  <td><input type="number" id="dob" placeholder="01/01/1970"></td>
+                  <td>Country:</td>
+                  <td><input type="text" id="country" placeholder="------Select Country-------">
+                     <select>
+                        kenya
+                        tz
+                        rwanda
+                     </select>
+                  </td>
+               </tr>
 
 
-<label for="">
-   Skills (Separate skills with commas):
-   <textarea name="skill" id="skill"></textarea>
-</label>
+               <tr>
+                  <td> Place Of Residence:</td>
+                  <td><input type="text" id="place" placeholder="Enter your Current Place of Residence."
+                        style="width: 250px;"></td>
+                  <td>Phone Number:</td>
+                  <td><input type="text" id="phone" placeholder="Eg.07xxxxxxxx Or +2567xxxxxx" style="width: 250px;">
+                  </td>
+               </tr>
 
-<label for="">
-   Projects (Separate Projects with commas):<br>
-   <textarea name="project" id="project"></textarea>
-</label>
+<tr>
+   <td> Email Adress:</td>
 
-<div class="sub">
-   <button type="submit" id="submit"> submit</button>
-   <button type="cancel" id="cancel">cancel</button>
-</div>
+
+   <td><input type="text" id="email" placeholder="Eg. applicant@gmail.com" style="width: 300px;">
+   </td>
+</tr>
+       <tr>
+          <td>Skills (Separate skills with commas):</td>
+          <td><textarea name="skill" id="skill"></textarea></td>
+          <td>Projects (Separate Projects with commas):<br></td>
+          <td><textarea name="project" id="project"></textarea></td>
+
+       </tr>          
+            
+       
+       <tr>
+          <td><button type="submit" id="submit"> submit</button></td>
+          <td><button type="cancel" id="cancel">Cancel</button></td>
+       </tr>
+
+            </table>
          </div>
       </form>
 
@@ -84,22 +84,3 @@ rwanda
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
