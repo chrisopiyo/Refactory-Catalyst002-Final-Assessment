@@ -35,7 +35,7 @@ const validate = () => {
 
     //validation so that country field isn't empty
     const city = document.getElementById('country');
-   if(city.value == '----Please select a country-----'){
+   if(city.value == '----select country-----'){
     alert('Please choose a country');
     city.style.border = "2px red solid";
    }

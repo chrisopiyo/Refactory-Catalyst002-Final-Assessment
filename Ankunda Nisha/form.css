@@ -1,10 +1,12 @@
 
-
+form{
+    margin: 30px;
+}
 .header{
 background-color: rgb(84,42,82);
 text-align: center;
 height: 10%;
-width: 30%;
+width: 44%;
 }
 h2{
     color: white;
@@ -14,21 +16,59 @@ p{
     color: rgb(84,42,82);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#red{
+    color: red;
+}
 label{
     color: rgb(84,42,82);
 }
 .up{
-    margin-left: 200px;
+    margin-left: 320px;
     margin-top: -38px;
 }
 .upo{
-    margin-left: 200px;
+    margin-left: 320px;
 }
 .side{
-    margin-left: 200px;
+    margin-left: 320px;
     margin-top: -38px; 
 }
 .sido{
-    margin-left: 200px;
+    margin-left: 320px;
+}
+.move{
+    margin-left: 320px;
+    margin-top: -38px; 
 }
 
+.moved{
+    margin-left: 320px; 
+}
+.pro1{
+    margin-left: 300px;
+    margin-top: -96px;
+}
+.pro2{
+    margin-left: 300px;
+}
+
+.sub{
+    margin-left: 377px;
+}
+input[type="submit"]{
+    background-color: rgb(84,42,82);
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size:15px;
+    width: 90px;
+    height: 25px;
+    border: 1px solid rgb(84,42,82);
+    border-radius: 3px;
+    /* padding: 5px 4px; */
+}
+
+.button{
+    font-size: 15px;
+    width:90px;
+    height: 25px;
+}

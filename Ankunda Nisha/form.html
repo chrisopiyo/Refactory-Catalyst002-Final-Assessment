@@ -15,33 +15,33 @@
                 <h2>Student Details Entry Form</h2>
 
             </div>
-            <p>Not all fields marked with a red star are (*) required</p>
+            <p>Not all fields marked with a red star are(<span class ="red" id = "red">*</span>) required</p>
             <div class="details">
                 <div class="first">
-                    <label for="surname">Sur name *</label><br>
-                    <input type="text" id="sur" name="sur" placeholder="Enter your Sur Name here">
+                    <label for="surname">Sur name <span class ="red" id = "red"> * </span></label><br>
+                    <input type="text" id="sur" name="sur" placeholder="Enter your Sur Name here" size ="30">
                     <div class="up">
-                        <label for="given">Given name *</label>
+                        <label for="given">Given name <span class ="red" id = "red"> * </span></label>
                     </div>
                     <div class="upo">
-                        <input type="text" id="giv" name="giv" placeholder="Enter your Given Name here"><br>
+                        <input type="text" id="giv" name="giv" placeholder="Enter your Given Name here" size ="30"><br>
                     </div>
                 </div>
                 <br>
 
-                <label for="gender">Gender *</label><br>
+                <label for="gender">Gender <span class ="red" id = "red"> * </span></label><br>
                 <input type="radio" id="male" name="gender" checked>Male
                 <input type="radio" id="female" name="gender">Female<br><br>
 
                 <div class="second">
-                    <label for="given">Date of Birth *</label><br>
-                    <input type="text" id="date" name="date" placeholder="01/01/1970">
+                    <label for="given">Date of Birth <span class ="red" id = "red"> * </span></label><br>
+                    <input type="text" id="date" name="date" placeholder="01/01/1970" size="30">
                     <div class="side">
-                        <label for="given">Country *</label>
+                        <label for="given">Country <span class ="red" id = "red"> * </span></label>
                     </div>
                     <div class="sido">
-                        <select name="country" id="country">
-                            <option selected>----Please select a country-----</option>
+                        <select name="country" id="country" >
+                            <option selected>----select country-----</option>
                             <option value="Uganda">Uganda</option>
                             <option value="Kenya">Kenya</option>
                             <option value="Tanzania">Tanzania</option>
@@ -49,24 +49,41 @@
                     </div>
                 </div><br>
 
-                <label for="residence">Place of Residence *</label><br>
-                <input type="text" id="place" name="place" placeholder="Enter your current place of residence">
-                <label for="phone">Phone Number *</label>
-                <input type="text" id="num" name="num" placeholder="Eg. 07xxxxxxx or +2567xxxxxxx"><br>
-                <!-- <label for="email">Email Address *</label><br>
-                <input type="text" id="email" name="email" placeholder="E.g. applicant@gmail.com" size="60"><br>
-                <div class = "skil">
-                <label for="skill">Skills (Separate skills with commas) *</label><br>
-                <textarea name="about" rows="5" cols="15" id="stxa"></textarea>
+                <div class="third">
+                <label for="residence">Place of Residence <span class ="red" id = "red"> * </span></label><br>
+                <input type="text" id="place" name="place" placeholder="Enter your current place of residence" size="30">
+                <div class = "move">
+                <label for="phone">Phone Number <span class ="red" id = "red"> * </span></label>
                 </div>
-                <div class="pro"></div>
-                <label for="pro">Projects (Separate Projects with commas)*</label>
-                <textarea name="about" rows="5" cols="15" id="protxa"></textarea>
-            </div>
+                <div class = "moved">
+                <input type="text" id="num" name="num" placeholder="Eg. 07xxxxxxx or +2567xxxxxxx" size="30"><br>
+                </div>
+            </div><br>
+
+
+                <label for="email">Email Address <span class ="red" id = "red"> * </span></label><br>
+                <input type="text" id="email" name="email" placeholder="E.g. applicant@gmail.com" size="76"><br><br>
+
+                <div class = "skil">
+                <label for="skill">Skills (Separate skills with commas) <span class ="red" id = "red"> * </span></label><br>
+                <textarea name="about" rows="5" cols="35" id="stxa"></textarea>
+                </div>
+
+                <div class="pro">
+                    <div class = "pro1">
+                <label for="pro">Projects (Separate Projects with commas)<span class ="red" id = "red"> * </span></label>
+                </div>
+                <div class = "pro2">
+                <textarea name="about" rows="5" cols="35" id="protxa"></textarea>
+                </div>
+                </div><br>
+                    
+                <div class = "sub">
                     <input type="submit" value="Submit" name="Submit" id="uc" onclick= "validate()">
-                    <button class="button" onclick="leave()">Exit</button>
+                    <button class="button" onclick="leave()">Cancel</button>
+                    </div>
                 
-            </div> -->
+            </div>
             </div>
     </form>
     <script src="form.js"></script>
