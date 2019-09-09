@@ -58,7 +58,13 @@ var validData = () => {
     else{
         
         }
-  
+  //validation DOB
+        if(dob==null){
+            alert("Select your DOB.");
+
+        }
+
+
   //validating the country selected in the drop down.
     if (country.value == "default") {
         country.value = "Country field is required"
@@ -73,12 +79,14 @@ var validData = () => {
   //validating that residence field is not left blank
     if(residence == ""){
         residence.value = "This field is required."
-
+        residence.style.border = "2px solid blue";
+        residence.focus();
+        console.log("residence is empty");
     }
   
   //validating the data entered into the part number element
     let numerals = /^[0-9]+$/
-  if (phone.value.length == 0 || phone.value.match(numerals)) {
+  if (phone.value.length == 0 || !phone.value.match(numerals)) {
       phone.value = "This phone field is required."
       phone.style.border = "2px solid blue";
       phone.focus();
