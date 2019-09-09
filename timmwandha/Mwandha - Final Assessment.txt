@@ -1,0 +1,10 @@
+Timothy Mwandha - Final Assignment - Approach.
+
+1. I created the HTML file for the student detail entry form.
+2. I wrote a javascript file to validate the data entered.
+3. I wrote a nodejs server file
+4. I created a mysQl database.
+
+Unfortunately time was not enough to test.
+
+Thanks.
