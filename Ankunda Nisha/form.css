@@ -68,7 +68,7 @@ label{
 }
 
 .sub{
-    margin-left: 377px;
+    margin-left: 296;
 }
 
 /* stylinng the submit button */
@@ -77,10 +77,10 @@ input[type="submit"]{
     margin-left: 5px;
     margin-top: 2px;
     font-size:15px;
-    width: 90px;
+    width: 130px;
     height: 25px;
     border: 1px solid rgb(84,42,82);
-    border-radius: 3px;
+    /* border-radius: 3px; */
     color: white;
     /* padding: 5px 4px; */
 }
@@ -89,6 +89,8 @@ input[type="submit"]{
 
 .button{
     font-size: 15px;
-    width:90px;
+    width:130px;
     height: 25px;
+    color:rgb(84,42,82);
+    border: 1px solid rgb(84,42,82);
 }
