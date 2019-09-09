@@ -42,7 +42,7 @@
                     <table>
                         <tr>
                             <td><label for="dob">Date of Birth<b style="color: red;">*</b></label></td>
-                            <td><label for="country">Country<b style="color: red;">*</b></label></td>
+                            <td><label for="country" id="countrylab">Country<b style="color: red;">*</b></label></td>
                         </tr>
                         <tr>
                             <td> <select name="dob" id="dob">
@@ -65,33 +65,28 @@
                                 </select></td>
                         </tr>
                     </table>
-                    <div>
-                        
-                       
-                        
-                        </select>
-                    </div>
-<!-- creating a selection for the countries -->
-                    <div>
-
-                        
-                    </div>
                 </div>
 <!-- creating a div for both place of residence and Phone Number -->
-                <div>
-                    <div>
-                        <label for="location">Place Of Residence<b style="color: red;">*</b></label>
-                        <input type="text" name="location" id="location" value="" placeholder="Enter your current Residence">
-                    </div>
-                    <div>
-                        <label for="phone">Phone Number<b style="color: red;">*</b></label>
-                        <input type="text" name="phoneNumber" id="phone" value="" placeholder="eg: 07xxxxxxxx or +2567xxxxxxxx">
-                    </div>
+                <div class="mag">
+                    <table>
+                        <tr>
+                            <td> <label for="location">Place Of Residence<b style="color: red;">*</b></label></td>
+                            <td><label for="phone" id="phonelab" >Phone Number<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="location" id="location" value="" placeholder="Enter your current Residence"></td>
+                            <td><input type="text" name="phoneNumber" id="phone" value="" placeholder="eg: 07xxxxxxxx or +2567xxxxxxxx"></td>
+                        </tr>
+                    </table>
                 </div>
 <!-- creating a field for the email -->
-                <div>
-                    <label for="email">Email<b style="color: red;">*</b></label>
-                    <input type="text" name="email" id="email" value="" placeholder="Eg. applicant@gmail.com">
+                <div class="mag">
+                    <div>
+                        <label for="email">Email<b style="color: red;">*</b></label>
+                    </div>
+                    <div>
+                        <input type="text" name="email" id="email" value="" placeholder="Eg. applicant@gmail.com">
+                    </div>
                 </div>
                 
 
