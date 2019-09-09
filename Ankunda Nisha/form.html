@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <link href="form.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Refactory Developer Challenge</title>
+</head>
+
+<body>
+    <form method="POST" id="form">
+        <div class="container">
+            <div class="header">
+                <h2>Student Details Entry Form</h2>
+                <p>Not all fields marked with a red star are (*) required</p>
+            </div>
+            <div class="details">
+                <label for = "surname">Sur name *</label><br>
+                <input type = "text" id="sur" name="sur" placeholder="Enter your Sur Name here">
+                <label for = "given">Given name *</label>
+                <input type = "text" id="giv" name="giv" placeholder="Enter your Given Name here"><br>
+                <label for = "gender">Gender *</label><br>
+                <input type = "radio" id="male" name="gender" checked>Male
+                <input type = "radio" id="female" name="gender" checked>Female<br>
+                <label for = "given">Date of Birth *</label><br>
+                <input type = "text" id="date" name="date" placeholder="01/01/1970">
+                <label for = "given">Country *</label>
+                <select name = "country" id="country">
+                    <option selected>----Please select a country-----</option>
+                    <option value = "Uganda">Uganda</option>
+                    <option value = "Kenya">Kenya</option>
+                    <option value = "Tanzania">Tanzania</option>
+                </select><br>
+                <label for = "residence">Place of Residence *</label><br>
+                <input type="text" id="place" name="place" placeholder="Enter your current place of residence">
+                <label for = "phone">Phone Number *</label>
+                <input type = "text" id="num" name="num" placeholder="Eg. 07xxxxxxx or +2567xxxxxxx"><br>
+                
+
+
+            </div>
+        </div>
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>
