@@ -1,9 +1,11 @@
-.container{
+/* .container{
     text-align: center;
     font-size: 20px;
     font-family:Tahoma,Arial,sans-serif;
 color: #542a52;
-width: 50%;
+width: 80%;
+margin-right: 100px;
+margin-left: 100px;
     
 }
 
@@ -20,7 +22,80 @@ p{
     height: 20px;
 } */
 
-#name{
+/* #name{
     text-align: center;
     width: 0in
+} */ 
+.container{
+    text-align: left;
 }
+
+.inner{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #542a52;
+    font-family:  Tahoma,  Arial, sans-serif;
+    font-size: 20px;
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+}
+.trouble{
+    color: red;
+}
+
+#picks{
+    background-color: #542a52;
+    color: #fff;
+    text-align: center;
+}
+    
+#bttn{
+    width: 700px;
+    height: 25px;
+    border: 1px solid #542a52;
+    font-family:  Tahoma,  Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.input1{
+    width: 700px;
+    height: 25px;
+    border: 1px solid #542a52;
+    font-family:  Tahoma,  Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.input{
+    font-family:  Tahoma,  Arial, sans-serif;
+    font-size: 20px;
+    color: #542a52;
+    
+}
+p{
+    font-family:  Tahoma,  Arial, sans-serif;
+    font-size: 20px;
+    color: #542a52; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

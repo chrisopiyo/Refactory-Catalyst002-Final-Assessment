@@ -6,81 +6,111 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
+
    <link rel="stylesheet" href="test.css">
+
 </head>
 
 <body>
    <div class="container">
 
-      <h1>Student Details Entry Form.</h1>
+  
+   <h1 id="picks">Student Details Entry Form</h1>
 
-      <p>note all fields marked with a red star(*) are required.</p>
+   <p id="inputs">Note all fields marked with a red star(<span class="trouble"> *</span>) are required</p>
+
+   <div>
+
+
       <form action="#">
-         <div class="tester">
-            <table id="item">
-               <tr id="name">
-                  <td>Surname:</td>
-                  <td><input type="text" id="surname" placeholder="Enter your sur Name Here."
-                        style="width: 300px; height:25px;"></td>
-                  <td>Given name:</td>
-                  <td><input type="text" id="givenname" placeholder="Enter Your Given Name Here."
-                        style="width: 300px; height:25px;"></td>
-               </tr>
+         <table>
+            <tr>
+               <td> Sur name<span class="trouble" id="surname"> *</span><br>
+                  <input type="text" name="surname" class="input" placeholder="Enter your sur name here">
+               </td>
+               <td>
+                  Given name<span class="trouble" id="givenname"> *</span><br>
+                  <input type="text" name="givenname" class="inner" placeholder="Enter your given name here">
 
-               <tr>
-                  <td> Gender:</td>
-                  <td><input type="text"></td>
-               </tr>
+               </td>
+            </tr>
 
-               <tr>
-                  <td>Date Of Birth:</td>
-                  <td><input type="number" id="dob" placeholder="01/01/1970"></td>
-                  <td>Country:</td>
-                  <td><input type="text" id="country" placeholder="------Select Country-------">
-                     <select>
-                        kenya
-                        tz
-                        rwanda
-                     </select>
-                  </td>
-               </tr>
+            <tr>
+               <td>
+
+                  Gender<span class="trouble"> *</span><br>
+                  <div id="bttn"><input type="radio" name="male" checked>Male
+                     <input type="radio" name="famale">Female
+                  </div>
 
 
-               <tr>
-                  <td> Place Of Residence:</td>
-                  <td><input type="text" id="place" placeholder="Enter your Current Place of Residence."
-                        style="width: 250px;"></td>
-                  <td>Phone Number:</td>
-                  <td><input type="text" id="phone" placeholder="Eg.07xxxxxxxx Or +2567xxxxxx" style="width: 250px;">
-                  </td>
-               </tr>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Date of Birth<span class="trouble" id="date"> *</span><br>
+                  <input type="date" name="date" class="inner">
 
-<tr>
-   <td> Email Adress:</td>
+               </td>
+
+               <td>
+                  Country<span class="trouble" id="country"> *</span><br>
+
+                  <select type="text" name="country" class="inner">
+                     <option value="#">.....Select Country.....</option>
+                     <option value="uganda">uganda</option>
+                     <option value="kenya">kenya</option>
+                     <option value="tanzania">tanzania</option>
+                  </select>
+
+               </td>
+
+            </tr>
+
+            <tr>
+               <td>
+                  Place of Residence<span class="trouble" id="residence"> *</span><br>
+                  <input type="text" name="residence" class="inner">
+               </td>
+               <td>
+                  Phone Number<span class="trouble" id="number"> *</span><br>
+                  <input type="text" name="number" class="inner">
+
+               </td>
+
+            </tr>
+
+            <tr>
+               <td>
+                  <label id="input">Email Address<span class="text-danger" id="email"> *</span><br></label>
+                  <input type="text" name="email" class="input1">
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Skills<span class="trouble" id="skills"> *</span><br>
+                  <textarea name="skill" cols="10" rows="5" class="inner"></textarea>
+               </td>
+
+               <td>
+                  <p>Projects <span class="trouble" id="projects"> *</span></p> <br>
+                  <textarea name="projects" cols="10" rows="5" class="inner"></textarea>
+               </td>
+            </tr>
+
+            <tr>
+               <div id="tenna">
+               <td><input type="submit" value="Submit" class="tigle"></td>
+               <td><input type="reset" value="Cancel" class="tigle"></td>
+            </div>
+            </tr>
 
 
-   <td><input type="text" id="email" placeholder="Eg. applicant@gmail.com" style="width: 300px;">
-   </td>
-</tr>
-       <tr>
-          <td>Skills (Separate skills with commas):</td>
-          <td><textarea name="skill" id="skill"></textarea></td>
-          <td>Projects (Separate Projects with commas):<br></td>
-          <td><textarea name="project" id="project"></textarea></td>
-
-       </tr>          
-            
-       
-       <tr>
-          <td><button type="submit" id="submit"> submit</button></td>
-          <td><button type="cancel" id="cancel">Cancel</button></td>
-       </tr>
-
-            </table>
-         </div>
+         </table>
       </form>
 
    </div>
+
 </body>
 
 </html>
