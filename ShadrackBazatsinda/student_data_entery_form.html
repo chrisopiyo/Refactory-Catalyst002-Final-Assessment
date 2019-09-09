@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Data Entery Form</title>
+    <link rel="stylesheet" href="student_data_entry.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topD">
+            <h1>Student Detail Entery Form</h1>
+        </div>
+        <p>Note: All fields marked with a red star are (<b style="color: red;">*</b>) are required</p>
+
+        <div class="formD">
+            <form action="">
+                <div>
+                    <table>
+                        <tr>
+                            <td><label for="surname">Sur name<b style="color: red;">*</b></label></td>
+                            <td> <label for="givename" id="given">Given Name<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="surname" id="surname" value="" placeholder="Enter your Sur Name here"></td>
+                            <td><input type="text" name="givenName" id="givename" value="" placeholder="Enter your Gieven Name here"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="border:none; color: red;" type="hidden" name="hidden" id="surna" value="Required">
+                            </td>
+                            <td><input style="border:none; color: red; padding-left: 20px;" type="hidden" name="hidden" id="give" value="Required"></td>
+                        </tr>
+                    </table>
+                </div>
+<!-- div holding the gender radio buttons  -->
+                <div>
+                    <div class="gender"> <label for="gender">Gender<b style="color: red;">*</b></label></div>
+
+                    <div class="genD">
+                        <input type="radio" name="male" id="male" value=""><label for="male">Male</label>
+                        <input type="radio" name="female" id="female" value="" ><label for="female">Female</label>
+                    </div>
+                </div>
+<!-- this div holds fields for date of birth and country -->
+                <div class="dated">
+                    <table>
+                        <tr>
+                            <td><label for="dob">Date of Birth<b style="color: red;">*</b></label></td>
+                            <td><label for="country" id="countrylab">Country<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td > <input type="date" name="date" id="date" value="date"></td>
+                            <td><select name="country" id="country">
+                                    <option value="" selected>Select Country</option>
+                                    <option value="">Uganda</option>
+                                    <option value="">Kenya</option>
+                                    <option value="">Tanzania</option>
+                                    <option value="">Rwanda</option>
+                                    <option value="">Burundi</option>
+                                    <option value="">South Sudan</option>
+                                    <option value="">Congo</option>
+        
+                                </select></td>
+                        </tr>
+                    </table>
+                </div>
+<!-- creating a div for both place of residence and Phone Number -->
+                <div class="mag">
+                    <table>
+                        <tr>
+                            <td> <label for="location">Place Of Residence<b style="color: red;">*</b></label></td>
+                            <td><label for="phone" id="phonelab" >Phone Number<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="location" id="location" value="" placeholder="Enter your current Residence"></td>
+                            <td><input type="text" name="phoneNumber" id="phone" value="" placeholder="eg: 07xxxxxxxx or +2567xxxxxxxx"></td>
+                        </tr>
+                    </table>
+                </div>
+<!-- creating a field for the email -->
+                <div class="mag">
+                    <div>
+                        <label for="email">Email<b style="color: red;">*</b></label>
+                    </div>
+                    <div>
+                        <input type="text" name="email" id="email" value="" placeholder="Eg. applicant@gmail.com">
+                    </div>
+                </div>
+                <button type="button" onclick="validation()">Submit</button>
+                
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    <script src="student_data_entry_form.js"></script>
+</body>
+</html>
