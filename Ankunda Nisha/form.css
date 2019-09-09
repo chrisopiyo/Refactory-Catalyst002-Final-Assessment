@@ -1,5 +1,19 @@
+
+
 .header{
 background-color: rgb(84,42,82);
 text-align: center;
+height: 10%;
+width: 30%;
+}
+h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    color: rgb(84,42,82);
+}
+label{
+    color: rgb(84,42,82);
 }
 
