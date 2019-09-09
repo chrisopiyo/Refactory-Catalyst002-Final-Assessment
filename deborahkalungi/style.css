@@ -14,10 +14,10 @@ h2{
     color: white;
     padding: 2%;
     font-size: 30px;
-    margin-right: 4.7%;
+    margin-right: 24%;
     /* width: 80%; */
 }
-input{
+input, select{
     border-radius: 0;
     height: 30px;
     width: 90%;
@@ -56,8 +56,16 @@ button{
 
 }
 .cancel{
-    margin-right: 4.7%;
+    margin-right: 24%;
 }
-#surnameError{
+#surnameError,  #given_name_error, #date_error {
     color: red;
+    margin-bottom: 1%;
 }
+.email{
+    width: 191%;
+}
+/* #given_name_error{
+    margin: 40%;
+  
+} */
