@@ -1,13 +1,20 @@
+/* Ankunda Nisha
+Styling the form */
 
+/* setting the margin of the page */
 form{
     margin: 30px;
 }
+
+/* styling the header */
 .header{
 background-color: rgb(84,42,82);
 text-align: center;
 height: 10%;
 width: 44%;
 }
+
+/* styling the fonts */
 h2{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,12 +23,18 @@ p{
     color: rgb(84,42,82);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* styling the '*' */
 #red{
     color: red;
 }
+
+/* stylinng the labels */
 label{
     color: rgb(84,42,82);
 }
+
+/* Styling the different fields so that they can be aligned */
 .up{
     margin-left: 320px;
     margin-top: -38px;
@@ -55,6 +68,8 @@ label{
 .sub{
     margin-left: 377px;
 }
+
+/* stylinng the submit button */
 input[type="submit"]{
     background-color: rgb(84,42,82);
     margin-left: 5px;
@@ -66,6 +81,8 @@ input[type="submit"]{
     border-radius: 3px;
     /* padding: 5px 4px; */
 }
+
+/* styling the cancel button */
 
 .button{
     font-size: 15px;
