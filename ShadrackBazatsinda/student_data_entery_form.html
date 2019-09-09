@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Student Data Entery Form</title>
+    <link rel="stylesheet" href="student_data_entry.css">
 </head>
 <body>
     <div class="container">
-        <div class="topdiv">
+        <div class="topD">
             <h1>Student Detail Entery Form</h1>
         </div>
-        <p>Note: All fields marked with a red star are (*) are required</p>
+        <p>Note: All fields marked with a red star are (<b style="color: red;">*</b>) are required</p>
 
         <div class="formD">
             <form action="">
                 <div>
-                     <label for="surname">Sur name</label>
-                     <input type="text" name="surname" id="surname" value="" placeholder="Enter your Sur Name here">
-                     <label for="givename">Given Name</label>
-                     <input type="text" name="givenName" id="givename" value="" placeholder="Enter your Gieven Name here">
-
+                    <table>
+                        <tr>
+                            <td><label for="surname">Sur name<b style="color: red;">*</b></label></td>
+                            <td> <label for="givename" id="given">Given Name<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="surname" id="surname" value="" placeholder="Enter your Sur Name here"></td>
+                            <td><input type="text" name="givenName" id="givename" value="" placeholder="Enter your Gieven Name here"></td>
+                        </tr>
+                    </table>
                 </div>
 <!-- div holding the gender radio buttons  -->
                 <div>
-                    <div>Gender</div>
+                    <div> <label for="gender">Gender<b style="color: red;">*</b></label></div>
 
-                    <div>
+                    <div class="genD">
                         <input type="radio" name="male" id="male" value=""><label for="male">Male</label>
                         <input type="radio" name="female" id="female" value="" ><label for="female">Female</label>
                     </div>
@@ -34,15 +40,16 @@
 <!-- this div holds fields for date of birth and country -->
                 <div>
                     <div>
-                        <label for="dob">Date of Birth</label>
+                        <label for="dob">Date of Birth<b style="color: red;">*</b></label>
                         <select name="dob" id="dob">
                         
                         </select>
                     </div>
 <!-- creating a selection for the countries -->
                     <div>
-                        <label for="country">Country</label>
+                        <label for="country">Country<b style="color: red;">*</b></label>
                         <select name="country" id="country">
+                            <option value="" selected>Select Country</option>
                             <option value="">Uganda</option>
                             <option value="">Kenya</option>
                             <option value="">Tanzania</option>
@@ -57,17 +64,17 @@
 <!-- creating a div for both place of residence and Phone Number -->
                 <div>
                     <div>
-                        <label for="location">Place Of Residence</label>
+                        <label for="location">Place Of Residence<b style="color: red;">*</b></label>
                         <input type="text" name="location" id="location" value="" placeholder="Enter your current Residence">
                     </div>
                     <div>
-                        <label for="phone">Phone Number</label>
+                        <label for="phone">Phone Number<b style="color: red;">*</b></label>
                         <input type="text" name="phoneNumber" id="phone" value="" placeholder="eg: 07xxxxxxxx or +2567xxxxxxxx">
                     </div>
                 </div>
 <!-- creating a field for the email -->
                 <div>
-                    <label for="email">Email</label>
+                    <label for="email">Email<b style="color: red;">*</b></label>
                     <input type="text" name="email" id="email" value="" placeholder="Eg. applicant@gmail.com">
                 </div>
                 
@@ -99,5 +106,6 @@
 
     </div>
     
+    <script src="student_data_entry_form.js"></script>
 </body>
 </html>
