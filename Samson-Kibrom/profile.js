@@ -4,7 +4,8 @@ const validate = () => {
   surname = document.getElementById("surname");
   givenname = document.getElementById("givenname");
   dob = document.getElementById("dob");
-  country = document.getElementById("country");
+  dropDownBox = document.getElementById("country");
+  country = document.getElementById("optionCountry");
   residence = document.getElementById("residence");
   phone = document.getElementById("phone");
   email = document.getElementById("email");
@@ -48,8 +49,8 @@ const validate = () => {
       warningMessage[2].innerHTML = "";
     }
 
-    if (regexEmpty.test(country.value) == true) {
-      borderColour(country, "1px solid red");
+    if (country.selected == true) {
+      borderColour(dropDownBox, "1px solid red");
       warningMessage[3].innerHTML = "Country Field is required";
       warningMessage[3].style =
         "color: red; font-family: Tahoma, Arial, sans-serif;";
@@ -58,44 +59,34 @@ const validate = () => {
       warningMessage[3].innerHTML = "";
     }
 
-    if (regexEmpty.test(country.value) == true) {
-      borderColour(country, "1px solid red");
-      warningMessage[4].innerHTML = "Country Field is required";
+    if (regexEmpty.test(residence.value) == true) {
+      borderColour(residence, "1px solid red");
+      warningMessage[4].innerHTML = "Residence Field is required";
       warningMessage[4].style =
         "color: red; font-family: Tahoma, Arial, sans-serif;";
     } else {
-      borderColour(country, "1px solid rgb(122, 122, 139)");
-      warningMessage[4].innerHTML = "";
-    }
-
-    if (regexEmpty.test(residence.value) == true) {
-      borderColour(residence, "1px solid red");
-      warningMessage[5].innerHTML = "This field is required";
-      warningMessage[5].style =
-        "color: red; font-family: Tahoma, Arial, sans-serif;";
-    } else {
       borderColour(residence, "1px solid rgb(122, 122, 139)");
-      warningMessage[5].innerHTML = "";
+      warningMessage[4].innerHTML = "";
     }
 
     if (regexEmpty.test(phone.value) == true) {
       borderColour(phone, "1px solid red");
-      warningMessage[6].innerHTML = "Country Field is required";
-      warningMessage[6].style =
+      warningMessage[5].innerHTML = "Phone Field is required";
+      warningMessage[5].style =
         "color: red; font-family: Tahoma, Arial, sans-serif;";
     } else {
       borderColour(phone, "1px solid rgb(122, 122, 139)");
-      warningMessage[6].innerHTML = "";
+      warningMessage[5].innerHTML = "";
     }
 
     if (regexEmpty.test(email.value) == true) {
       borderColour(email, "1px solid red");
-      warningMessage[7].innerHTML = "Country Field is required";
-      warningMessage[7].style =
+      warningMessage[6].innerHTML = "Email Field is required";
+      warningMessage[6].style =
         "color: red; font-family: Tahoma, Arial, sans-serif;";
     } else {
       borderColour(email, "1px solid rgb(122, 122, 139)");
-      warningMessage[7].innerHTML = "";
+      warningMessage[6].innerHTML = "";
     }
   });
 };

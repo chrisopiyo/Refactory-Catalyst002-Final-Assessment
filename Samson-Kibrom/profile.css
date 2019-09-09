@@ -1,11 +1,11 @@
 body {
-  background-color: burlywood;
+  background-color: #fff;
 }
 
 .container {
   margin: 0 auto;
   width: 750px;
-  height: 600px;
+  height: 650px;
   background-color: #fff;
 }
 
@@ -69,17 +69,35 @@ input[type="text"] {
 .buttons {
   font-family: Tahoma, Arial, sans-serif;
   font-size: 20px;
+  background-color: #542a52;
+  color: #fff;
+  border: 1px solid #542a52;
+  border-radius: 2px;
+  width: 180px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* .buttons:hover {
+  background-color: #542a52;
+  color: #fff;
+
+  /* border-color: #29487d; */
+/* } */
+
+#cancel {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 20px;
   background-color: #fff;
   color: #542a52;
   border: 1px solid #542a52;
   border-radius: 2px;
   width: 180px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
-.buttons:hover {
-  background-color: #542a52;
-  color: #fff;
-
-  /* border-color: #29487d; */
+.warningMessage {
+  font-family: Tahoma, Arial, sans-serif;
+  padding-left: 20px;
 }
