@@ -17,7 +17,7 @@
         
         </div>
         <p><b>Note: All fields marked with a red star are required.</b></p>
-        <form class="form-group"></form>
+        <form class="form-group" action="#" method="POST"></form>
         <div class="row" id="row2"> 
             <div class="col-lg-6 form-group" id="r1lhs">
                 <label for="surname">Surname </label>
@@ -28,7 +28,7 @@
 
           
             <div class="col-lg-6 form-group" id="r1rhs">
-                <label for="surname">Given name </label>
+                <label for="givenname">Given name </label>
                 <span class="asterix">*</span>
                 <input class="form-control" type="text" id="givenname" placeholder="enter your given name here">
 
@@ -39,9 +39,10 @@
         <div class="row" id="row3"> 
             <div class="col-lg-12 form-inline" id="r3">
 
-                <label for="surname">Gender *</label>
-                <label class="radio-inline"><input type="radio" name="genmale" checked>Male</label>
-                <label class="radio-inline"><input type="radio" name="genfemale">Female</label>
+                <label for="surname">Gender </label>
+                <span class="asterix">*</span>
+                <label class="radio-inline"><input type="radio" name="gender" checked>Male</label>
+                <label class="radio-inline"><input type="radio" name="gender">Female</label>
           
             </div>
 
@@ -55,11 +56,11 @@
 
                 </div>
 
-                <div class="col-lg-6" id="country"> 
-                <label for="dob">Country</label>
+                <div class="col-lg-6" id="ctry"> 
+                <label for="country">Country</label>
                 <span class="asterix">*</span><br>
             
-                <select id="cou" name="country">
+                <select id="country" name="cou">
                             
                     <option selected=" -select country-" value="default">-select country-</option>
                     <option value="Uganda">Uganda</option>
@@ -92,9 +93,9 @@
 
         <div class="row" id="row7"> 
             <div class="col-lg-12 form-group">
-                <label for="emailadd">Email Address</label>
+                <label for="email">Email Address</label>
                 <span class="asterix">*</span>
-                <input class="form-control" type="text" id="emailadd" placeholder="e.g. applicant@gmail.com">
+                <input class="form-control" type="text" id="email" placeholder="e.g. applicant@gmail.com">
             </div>
 
         </div>
