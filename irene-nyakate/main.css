@@ -1,5 +1,5 @@
 
-#student-profile{
+#container{
     border: 2px solid rgb(84,42,82);
     width: 70%;
     margin: 0px auto;
@@ -45,7 +45,7 @@ input[type=textarea]{
     margin-top: -30px;
 
 }
-button[type=submit], button[type=cancel]{
+#form-submit, #form-cancel{
     width: 45%;
     height: 40px;
     margin-bottom: 20px;
@@ -56,12 +56,12 @@ button[type=submit], button[type=cancel]{
 
     /* margin-top: 10px; */
 }
-button[type=submit]{
+#form-submit{
     background-color: rgb(84,42,82);
     color: white;
     
 }
-button[type=cancel]{
+#form-cancel{
     color: rgb(84,42,82);
     background-color: white;
 }
