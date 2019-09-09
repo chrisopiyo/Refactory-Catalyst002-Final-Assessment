@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Student Profile</title>
+</head>
+
+<body>
+    <div id="container">
+        <form id="my-form">
+            <div>
+                <h1>Student Details Entry Form</h1>
+            </div>
+            <p>Not all fields marked with a red star are (<span style=color:red;>*</span>) are required</p>
+            <div class="first-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="surname">Sur name<span style=color:red;>*</span></label><br>
+                                <input type="text" id="surname" name="surname" placeholder="Enter your surname here">
+                                <span class="message"></span>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="surname">Given name<span style=color:red;>*</span></label><br>
+                                <input type="text" id="givenname" name="givename" placeholder="Enter your given name here">
+                                <span class="message"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-div">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div>
+                                <label for="surname">Gender<span style=color:red;>*</span></label></div>
+                            <div class="div-inputs"><input type="radio" id="male" name="gender" checked>Male &nbsp; &nbsp; &nbsp;
+                                <input type="radio" id="female" name="gender">Female
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="third-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="surname">Date Of Birth<span style=color:red;>*</span></label><br>
+                                <input type="text" id="dob" name="dob" placeholder="01/01/1970  =">
+                                <span class="message"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="surname">Country<span style=color:red;>*</span></label><br>
+                                <select id="country" name="country">
+                                    <option value="0">........Select Country........</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Kenya">Kenya</option>
+                                </select>
+                                <span class="message"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="residence">Place of Residence<span style=color:red;>*</span></label><br>
+                                <input type="text" id="residence" name="residence"
+                                    placeholder="Enter your Current place of residence">
+                                <span class="message"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="phone">Phone Number<span style=color:red;>*</span></label><br>
+                                <input type="text" id="phone" name="phone"
+                                    placeholder="Eg. 07xxxxxxxx or +2567xxxxxxxx">
+                                <span class="message"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fifth-div">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div><label for="email">Email Address<span style=color:red;>*</span></label></div>
+                            <input type="text" id="email" name="email" placeholder="E.g. applicant@gmail.com">
+                            <span class="message"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sixth-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div>
+                                <p>Skills <span class="text-muted">(Separate skills with commas)</span><span style=color:red;>*</span></p><br>
+                                <input type="textarea" id="skills" name="skills">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <p>Projects <span class="text-muted">(Separate Projects with commas)</span><span style=color:red;>*</span></p><br>
+                                <input type="textarea" id="projects" name="projects">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-div">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <button type="button" id="form-submit" onsubmit="validate()">Submit</button>
+                                    <button type="button" id="form-cancel" >Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
