@@ -12,8 +12,23 @@ h2{
 }
 p{
     color: rgb(84,42,82);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 label{
     color: rgb(84,42,82);
+}
+.up{
+    margin-left: 200px;
+    margin-top: -38px;
+}
+.upo{
+    margin-left: 200px;
+}
+.side{
+    margin-left: 200px;
+    margin-top: -38px; 
+}
+.sido{
+    margin-left: 200px;
 }
 

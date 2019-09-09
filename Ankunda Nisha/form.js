@@ -45,10 +45,29 @@ const validate = () => {
  
    //validation so that place of resience field isn't empty
 
+   const pla = document.getElementById('place');
+   if(pla.value == ''){
+       alert('This field is required');
+       pla.style.border = "2px red solid";
+   }
+   
    //validation so that phone number field isn't empty
-
+   const zip = document.getElementById('num');
+   const code = /^[-+]?[0-9]+$/;
+   if (zip.value == '' || zip.value.match(code)) {
+       alert('This field is required');
+       zip.style.border = "2px red solid";
+   }
    //email validation
-
+   const mail = document.getElementById('email');
+   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+   if (mail.value.match(mailformat) || mail.value == ' ') {
+       return true;
+   }
+   else {
+       alert('This field is required, a valid email has "@"');
+       mail.style.border = "2px red solid";
+   }
 
 
 }
