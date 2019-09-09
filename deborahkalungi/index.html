@@ -14,23 +14,26 @@
 
 
 <body>
-        <form action="">
+        <form action="" onsubmit=" return Validate()">
     <h2>Student Details Entry Form</h2>
     <p>Not all fields marked with a red star (<span style="color: red">*</span>) star are Required</p>
   
         <table>
             <tr>
-                <td>Sur name</td>
-                <td>Given name</td>
+                <td>Sur name<span style="color: red">*</span></td>
+                <td>Given name<span style="color: red">*</span></td>
             </tr>
 
             <tr>
                 <td><input type="text" placeholder="Enter your Sur Name here" name = "surname" class = "surname" id = "surname"></td>
                 <td><input type="text" placeholder="Enter your Given Name here" name = "givenname" id = "givenname", class = "givenname"></td>
             </tr>
+            <tr>
+                <td id = "surnameError"></td>
+            </tr>
 
             <tr>
-                <td>gender</td>
+                <td>gender<span style="color: red">*</span></td>
             </tr>
             <!-- <tr>
                 <td><input type="text" class = "gender" id = "gender"></td>
@@ -41,8 +44,8 @@
             </tr>
 
             <tr>
-                <td>Date of Birth</td>
-                <td>Country</td>
+                <td>Date of Birth<span style="color: red">*</span></td>
+                <td>Country<span style="color: red">*</span></td>
             </tr>
             <tr>
                 <td><input type="text" placeholder="01/01/1970"></td>
@@ -51,8 +54,8 @@
             </tr>
 
             <tr>
-                <td>Place of residence</td>
-                <td>Phone Number</td>
+                <td>Place of residence<span style="color: red">*</span></td>
+                <td>Phone Number<span style="color: red">*</span></td>
             </tr>
 
             <tr>
@@ -62,7 +65,7 @@
 
             </tr>
             <tr>
-                <td>Email Address</td>
+                <td>Email Address<span style="color: red">*</span></td>
             </tr>
             <tr>
                 <td> <input type="text" placeholder="Eg. applicant@gmail.com"></td>
@@ -72,8 +75,8 @@
 
             <tr><td><input type="text"></td> </tr>
             <tr>
-                <td>Skills (Separate skills with commas)</td>
-                <td>Projects(Separate projects with commas)</td>
+                <td>Skills (Separate skills with commas)<span style="color: red">*</span></td>
+                <td>Projects(Separate projects with commas)<span style="color: red">*</span></td>
             </tr>
             <tr>
                 <td><input type="text"></td>
@@ -81,14 +84,11 @@
             </tr>
         </table>
         <button type="reset" class = "cancel"><b> Cancel</b></button>
-        <button type="submit"><b> Submit</b></button>
+        <button type = "submit"><b> Submit</b></button>
         
     </form>
 
 </body>
-<div contenteditable>
-        ST<span style="color: red">A</span>CK OVERFLOW
-    </div>
 <script src="myscript.js"></script>
 
 </html>
