@@ -52,7 +52,7 @@ connection.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
     // query for inserting into the table
-    var sql = "INSERT INTO orders (surname, givenname, gender, dateofbirth, contact, country, residence, email, skills, projects) VALUES (?,?,?,?,?,?,?,?,?,?)";
+    var sql = "INSERT INTO student (surname, givenname, gender, dateofbirth, contact, country, residence, email, skills, projects) VALUES (?,?,?,?,?,?,?,?,?,?)";
     connection.query(sql, [surname, givenname, gender, dateofbirth, contact, country, residence, email, skills, projects], function (err, result) {
       if (err) throw err;
       console.log("1 record inserted");
