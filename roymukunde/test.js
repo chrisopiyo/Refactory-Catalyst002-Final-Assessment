@@ -3,11 +3,11 @@ const validForm =() =>{
     const surname = document.getElementById("surname");
     const givenname = document.getElementById("givename");
     const gender = document.getElementsByName("gender");
-    const dob= document.getElementById("dob");
+    const dateofbirth= document.getElementById("dob");
     const country = document.getElementById("country");
     const placeofresidence = document.getElementById("location");
     const phonenumber = document.getElementById("phone");
-    var email = document.getElementById('email');
+    const email = document.getElementById('email');
 
 
     let letters = /^[A-Za-z]+$/;
@@ -17,13 +17,13 @@ const validForm =() =>{
     }
 
     let givy = /^[A-Za-z]+$/;
-    if (givy.test(gienname.value) == false) {
+    if (givy.test(givenname.value) == false) {
         const givennameerror = document.getElementById("givn");
         givennameerror.type="text";
     }
 
     let numbers = /^[0-9]+$/;
-        if (phone.value.match(numbers)) {
+        if (phonenumber.value.match(numbers)) {
             const phonenumberesy = document.getElementById("phne");
             phonenumberesy.type="text";
         }
@@ -33,4 +33,13 @@ const validForm =() =>{
         const placeofresidencekast = document.getElementById("locton")
         placeofresidencekast.type="text";
     }
+
+    let emailformat = /^\w+([\.-]?\w+)* @ w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.value.match(emailformat)) {
+        const emailkap = document.getElementById('emal');
+        emailkap.type="text";
+    }
+
+
+    
 }
