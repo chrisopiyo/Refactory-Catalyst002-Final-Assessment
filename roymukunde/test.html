@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="babah">
-            <h1>Student Detail Entery Form</h1>
+            <h1>Student Detail Entry Form</h1>
         </div>
         <p>Note: All fields marked with a red star are (<b style="color: red;">*</b>) are required</p>
 
@@ -90,10 +90,13 @@
                                     placeholder="Enter your current Residence"></td>
                             <td><input type="text" name="phoneNumber" id="phone" value=""
                                     placeholder="eg: 07xxxxxxxx or +2567xxxxxxxx"></td>
+                        <tr>
+                                <td><input type="hidden" name="hidden" id="locton" style="color: red; border:none;"
+                                    value="Required input"></td>
                             <td><input type="hidden" name="hidden" id="phne" style="color: red; border:none;"
                                     value="Required input"></td>
-                            <td><input type="hidden" name="hidden" id="locton" style="color: red; border:none;"
-                                    value="Required input"></td>
+                            
+                        </tr>
                         </tr>
                     </table>
                 </div>
@@ -104,6 +107,7 @@
                     </div>
                     <div>
                         <input type="text" name="email" id="email" value="" placeholder="Eg. applicant@gmail.com">
+                        
                         <input type="hidden" name="hidden" id="emal" style="color: red; border:none;"
                             value="Required input">
                     </div>
