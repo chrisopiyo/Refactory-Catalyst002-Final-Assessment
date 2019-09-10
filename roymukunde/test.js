@@ -15,6 +15,7 @@ const validForm =() =>{
         const surnameror = document.getElementById("surna");
         surnameror.type="text";
     }
+    
 
     let givy = /^[A-Za-z]+$/;
     if (givy.test(givenname.value) == false) {
@@ -39,7 +40,9 @@ const validForm =() =>{
         const emailkap = document.getElementById('emal');
         emailkap.type="text";
     }
-
+    else{
+        return false;
+    }
 
     
 }
