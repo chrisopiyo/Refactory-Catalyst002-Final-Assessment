@@ -15,7 +15,7 @@
         <p>Note: All fields marked with a red star are (<b style="color: red;">*</b>) are required</p>
 
         <div class="tiggle">
-            <form action="">
+            <form action="#">
                 <div>
                     <table>
                         <tr>
@@ -28,9 +28,9 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="hidden" name="hidden" id="surna" value="Required">
+                                <input type="hidden" name="hidden" id="surna" style="color: red; border: none;" value="Required input">
                             </td>
-                            <td><input type="hidden" name="hidden" value="Required"></td>
+                            <td><input type="hidden" name="hidden" id="givn" style="color: red; border:none;" value="Required input"></td>
                         </tr>
                     </table>
                 </div>
@@ -39,16 +39,16 @@
                     <div class="gender"> <label for="gender">Gender<b style="color: red;">*</b></label></div>
 
                     <div class="kati">
-                        <input type="radio" name="male" id="male" value=""><label for="male">Male</label>
-                        <input type="radio" name="female" id="female" value="" ><label for="female">Female</label>
+                        <input type="radio" name="gender" id="male" value=""><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="" ><label for="female">Female</label>
                     </div>
                 </div>
 <!-- this div holds fields for date of birth and country -->
                 <div class="latie">
                     <table>
                         <tr>
-                            <td><label for="dob">Date of Birth<b style="color: red;">*</b></label></td>
-                            <td><label for="country" id="countrylab">Country<b style="color: red;">*</b></label></td>
+                            <td><label for="dob" >Date of Birth<b style="color: red;">*</b></label></td>
+                            <td><label for="country" id="Country">Country<b style="color: red;">*</b></label></td>
                         </tr>
                         <tr>
                             <td> <select type="date" name="dob" id="dob">
@@ -82,7 +82,9 @@
                         <tr>
                             <td><input type="text" name="location" id="location" value="" placeholder="Enter your current Residence"></td>
                             <td><input type="text" name="phoneNumber" id="phone" value="" placeholder="eg: 07xxxxxxxx or +2567xxxxxxxx"></td>
-                        </tr>
+                        <td><input type="hidden" name="hidden" id="phne" style="color: red; border:none;" value="Required input"></td>
+                        <td><input type="hidden" name="hidden" id="locton" style="color: red; border:none;" value="Required input"></td>
+                    </tr>
                     </table>
                 </div>
 <!-- creating a field for the email -->
@@ -96,33 +98,20 @@
                 </div>
                 
 
-
+<div class="enty">
+<tr>
+    <td><button type="submit" onclick="validForm()" id="submit" name="submit">Submit</button></td>
+    <td><button type="reset" id="cancel" name="cancel">Cancel</button></td>
+</tr>
+</div>
 
             </form>
 
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
     
-    
+<script src="test.js"></script>
 </body>
 </html>
