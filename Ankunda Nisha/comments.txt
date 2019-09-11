@@ -1,0 +1,7 @@
+#COMMENTS
+#STUDENT: ANKUNDA NISHA
+completed and in time
+successfully used version control(made a pull request)
+used plain html (well used)
+used plain css (well used)
+used vanilla javascript (well used)
