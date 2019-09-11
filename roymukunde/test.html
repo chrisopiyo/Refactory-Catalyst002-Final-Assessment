@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Data Entery Form</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="babah">
+            <h1>Student Detail Entry Form</h1>
+        </div>
+        <p>Note: All fields marked with a red star are (<b style="color: red;">*</b>) are required</p>
+
+        <div class="tiggle">
+            <form action="#">
+                <div>
+                    <table>
+                        <tr>
+                            <td><label for="surname">Sur name<b style="color: red;">*</b></label></td>
+                            <td> <label for="givename" id="given">Given Name<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="surname" id="surname" value=""
+                                    placeholder="Enter your Sur Name here"></td>
+                            <td><input type="text" name="givenName" id="givename" value=""
+                                    placeholder="Enter your Given Name here"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="hidden" id="surna" style="color: red; border: none;"
+                                    value="Required input">
+                            </td>
+                            <td><input type="hidden" name="hidden" id="givn" style="color: red; border:none;"
+                                    value="Required input"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <div class="gender"> <label for="gender">Gender<b style="color: red;">*</b></label></div>
+
+                    <div class="kati">
+                        <input type="radio" name="gender" id="male" value=""><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value=""><label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="latie">
+                    <table>
+                        <tr>
+                            <td><label for="dob">Date of Birth<b style="color: red;">*</b></label></td>
+                            <td><label for="country" id="Country">Country<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td> <select type="date" name="dob" id="dob">
+                                    <option value="">12/05/1993</option>
+                                    <option value="">12/05/1993</option>
+                                    <option value="">12/05/1993</option>
+                                    <option value="">12/05/1993</option>
+                                    <option value="">12/05/1993</option>
+                                </select></td>
+                            <td><select name="country" id="country">
+                                    <option value="" selected>Select Country</option>
+                                    <option value="">Uganda</option>
+                                    <option value="">Kenya</option>
+                                    <option value="">Tanzania</option>
+                                    <option value="">Rwanda</option>
+                                    <option value="">Burundi</option>
+                                    <option value="">South Sudan</option>
+                                    <option value="">Congo</option>
+
+                                </select></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="pint">
+                    <table>
+                        <tr>
+                            <td> <label for="location">Place Of Residence<b style="color: red;">*</b></label></td>
+                            <td><label for="phone" id="phonelab">Phone Number<b style="color: red;">*</b></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="location" id="location" value=""
+                                    placeholder="Enter your current Residence"></td>
+                            <td><input type="text" name="phoneNumber" id="phone" value=""
+                                    placeholder="eg: 07xxxxxxxx or +2567xxxxxxxx"></td>
+                        <tr>
+                                <td><input type="hidden" name="hidden" id="locton" style="color: red; border:none;"
+                                    value="Required input"></td>
+                            <td><input type="hidden" name="hidden" id="phne" style="color: red; border:none;"
+                                    value="Required input"></td>
+                            
+                        </tr>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="pint">
+                    <div>
+                        <label for="email">Email<b style="color: red;">*</b></label>
+                    </div>
+                    <div>
+                        <input type="text" name="email" id="email" value="" placeholder="Eg. applicant@gmail.com">
+                        
+                        <input type="hidden" name="hidden" id="emal" style="color: red; border:none;"
+                            value="Required input">
+                    </div>
+                </div>
+
+
+                <div class="enty">
+                    <tr>
+                        <td><button type="submit" onclick="validForm()" id="submit" name="submit">Submit</button></td>
+                        <td><button type="reset" id="cancel" name="cancel">Cancel</button></td>
+                    </tr>
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+
+}
+
+
+.container{
+    width: 50%;
+    margin: 15px auto;
+    padding: 30px;
+}
+
+
+.babah{
+    width: 100%;
+    height: 50px;
+    background-color: #542a54;
+}
+
+
+h1{
+    color: #ffffff;
+    font-family: Tahoma, Arial, sans-serif;
+    padding-left: 20px;
+}
+
+
+p{
+    padding-left: 5px;
+    color: #542a54;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+.tiggle{
+    margin-left: 5px;
+}
+
+
+label{
+    color: #542a54;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+input{
+    border: 1px solid #542a54;
+    padding-left: 10px;
+}
+
+
+.kati{
+    border: 1px solid #542a54;
+    height: 25px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+
+#surname{
+    width: 300px;
+    height: 25px;
+}
+
+
+#givename{
+    width: 300px;
+    height: 25px;
+    margin-left: 30px;  
+}
+
+
+#given{
+    margin-left: 30px; 
+}
+
+.gender{
+    margin-top: 5px;
+}
+
+#female{
+    margin-left: 100px;
+}
+
+.latie{
+    margin-top: 10px;
+}
+
+
+select{
+    width: 313px;
+    height: 25px;
+    border: 1px solid #542a54;
+    padding-left: 5px;
+}
+
+
+#country{
+    margin-left: 25px;
+}
+
+#location{
+    width: 300px;
+    height: 25px;
+}
+
+#phone{
+    width: 300px;
+    height: 25px;
+    margin-left: 30px;
+}
+
+
+#email{
+    width: 646px;
+    height: 25px;
+}
+
+.pint{
+    margin-top: 10px;
+
+}
+
+
+.enty{
+    margin-top: 20px;
+    margin-right: 200px;
+    float: right;
+    /* margin-left: 400px; */
+    padding-left: 100px;
+}
+
+#cancel{
+    width: 100px;
+    height: 30px;
+    background-color: #542a54;
+    color: #ffffff;
+
+    
+
+}
+
+
+#submit{
+    width: 100px;
+    height: 30px;
+    background-color: #542a54;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
